@@ -3,7 +3,7 @@
 A professional C# Console Application integrated with SQLite for persistent data storage. This project demonstrates a clean, modular architecture (Models-Services-UI) designed for scalability and ease of maintenance.
 
 ## 🛠️ Tech Stack & Tools
-* **Language:** C# (.NET 8.0)
+* **Language:** C# (.NET 10.0)
 * **Database:** SQLite (using `Microsoft.Data.Sqlite`)
 * **Environment:** Visual Studio Code / Visual Studio 2022
 * **Data Handling:** LINQ for advanced data querying and Parameterized SQL for security.
@@ -40,7 +40,7 @@ The project is organized into distinct layers to ensure a clean separation of co
 ## 🚀 Getting Started
 
 ### Prerequisites
-* [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+* [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 * Visual Studio Code with the **C# Dev Kit** extension.
 
 ### Installation
