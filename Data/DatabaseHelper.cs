@@ -14,7 +14,8 @@ namespace SMS.Data
     {
         // Database file path — created automatically next to the exe
         private static readonly string DbPath =
-            Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sms.db");
+    Environment.GetEnvironmentVariable("DB_PATH")
+    ?? Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sms.db");
 
         // Connection string
         public static string ConnectionString =>
@@ -26,6 +27,9 @@ namespace SMS.Data
         /// </summary>
         public static SqliteConnection GetConnection()
         {
+            var dir = Path.GetDirectoryName(DbPath);
+            if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
             var conn = new SqliteConnection(ConnectionString);
             conn.Open();
             return conn;
