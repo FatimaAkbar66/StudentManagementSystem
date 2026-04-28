@@ -1,14 +1,19 @@
-# Student Management System (SMS)
-A professional C# Console Application integrated with SQLite for persistent data storage. This project demonstrates a clean, modular architecture (Models-Services-UI) designed for scalability and ease of maintenance.
+# 🎓 Student Management System (SMS)
+
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
+A professional C# Console Application integrated with **SQLite** for persistent data storage. This project demonstrates a clean, modular architecture (Models-Services-UI) designed for scalability, security, and cross-platform deployment.
+
+---
 
 ## 🛠️ Tech Stack & Tools
 * **Language:** C# (.NET 10.0)
 * **Database:** SQLite (using `Microsoft.Data.Sqlite`)
 * **Environment:** Visual Studio 2026
-<<<<<<< HEAD
-* **Containerization:** Docker (Multi-stage build)
-=======
->>>>>>> 238d977bacf58a3524ede4555a4ce4910a2d50c8
+* **Containerization:** Docker (Multi-stage builds)
 * **Data Handling:** LINQ for advanced data querying and Parameterized SQL for security.
 
 ## 📂 Project Architecture
