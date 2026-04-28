@@ -85,8 +85,6 @@ docker run -it -v sms-data:/app/data sms-console
 * **Containerization:** Multi-stage Dockerfile with Docker volume for persistent storage.
 
 ---
-<<<<<<< HEAD
-*Developed as part of the CS curriculum to master C# logic, Database Integration, and Docker containerization.*
-=======
+*git clone [https://github.com/FatimaAkbar66/StudentManagementSystem.git](https://github.com/FatimaAkbar66/StudentManagementSystem.git)
 *Developed as part of the CS curriculum to master C# logic and Database Integration.*
->>>>>>> 238d977bacf58a3524ede4555a4ce4910a2d50c8
+
