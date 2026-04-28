@@ -5,7 +5,10 @@ A professional C# Console Application integrated with SQLite for persistent data
 * **Language:** C# (.NET 10.0)
 * **Database:** SQLite (using `Microsoft.Data.Sqlite`)
 * **Environment:** Visual Studio 2026
+<<<<<<< HEAD
 * **Containerization:** Docker (Multi-stage build)
+=======
+>>>>>>> 238d977bacf58a3524ede4555a4ce4910a2d50c8
 * **Data Handling:** LINQ for advanced data querying and Parameterized SQL for security.
 
 ## 📂 Project Architecture
@@ -77,4 +80,8 @@ docker run -it -v sms-data:/app/data sms-console
 * **Containerization:** Multi-stage Dockerfile with Docker volume for persistent storage.
 
 ---
+<<<<<<< HEAD
 *Developed as part of the CS curriculum to master C# logic, Database Integration, and Docker containerization.*
+=======
+*Developed as part of the CS curriculum to master C# logic and Database Integration.*
+>>>>>>> 238d977bacf58a3524ede4555a4ce4910a2d50c8
