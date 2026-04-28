@@ -1,16 +1,15 @@
 # Student Management System (SMS)
-
 A professional C# Console Application integrated with SQLite for persistent data storage. This project demonstrates a clean, modular architecture (Models-Services-UI) designed for scalability and ease of maintenance.
 
 ## 🛠️ Tech Stack & Tools
 * **Language:** C# (.NET 10.0)
 * **Database:** SQLite (using `Microsoft.Data.Sqlite`)
-* **Environment:** Visual Studio Code / Visual Studio 2022
+* **Environment:** Visual Studio 2026
+* **Containerization:** Docker (Multi-stage build)
 * **Data Handling:** LINQ for advanced data querying and Parameterized SQL for security.
 
 ## 📂 Project Architecture
 The project is organized into distinct layers to ensure a clean separation of concerns:
-
 * **Models:** Core data structures (Student, Course, Admin, etc.).
 * **Data:** Database connection helpers and initial schema seeding.
 * **Services:** Repository layer handling all CRUD operations and SQL logic.
@@ -40,20 +39,34 @@ The project is organized into distinct layers to ensure a clean separation of co
 ## 🚀 Getting Started
 
 ### Prerequisites
-* [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
+* [.NET 10.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 * Visual Studio Code with the **C# Dev Kit** extension.
 
 ### Installation
 1.  **Open Terminal** in the project root directory.
 2.  **Restore Packages:**
-    ```bash
+```bash
     dotnet restore
-    ```
+```
 3.  **Run the Project:**
-    ```bash
+```bash
     dotnet run
-    ```
+```
     *The `sms.db` SQLite database will be automatically created on the first run.*
+
+## 🐳 Docker
+
+The project is fully containerized using a **multi-stage Dockerfile** — Stage 1 compiles the C# project using the .NET SDK, Stage 2 runs it on a lightweight runtime image. The SQLite database is stored in a Docker volume so data persists between container restarts.
+
+### Run with Docker
+```bash
+# Build the image
+docker build -t sms-console .
+
+# Run the container
+docker run -it -v sms-data:/app/data sms-console
+```
+
 
 ## 💡 C# Concepts Demonstrated
 * **Object-Oriented Programming:** Encapsulation through Namespaces and Classes.
@@ -61,6 +74,7 @@ The project is organized into distinct layers to ensure a clean separation of co
 * **Modern Syntax:** Switch expressions, String interpolation, and Nullable types.
 * **Functional Programming:** Use of `Action<T>` delegates and LINQ.
 * **Resource Management:** Efficient database connection handling using `using` blocks.
+* **Containerization:** Multi-stage Dockerfile with Docker volume for persistent storage.
 
 ---
-*Developed as part of the CS curriculum to master C# logic and Database Integration.*
+*Developed as part of the CS curriculum to master C# logic, Database Integration, and Docker containerization.*
